@@ -13,12 +13,15 @@ import java.util.Scanner;
 
 public class ExercicioCirculo {
     public static void main(String[] args){
-    Scanner en = new Scanner(System.in);
-    double raio = en.nextDouble(); // Lê o raio sem imprimir nada antes
+    Scanner input = new Scanner(System.in);
 
-    double pi = 3.14159; // Usando o π especificado no problema
+    double pi = 3.14159;
+    System.out.print("Digite um valor com casa decimal: ");
+    double raio = input.nextDouble();
+
+
     double area = pi * raio * raio;
 
-        System.out.printf("A=%.4f%n", area); // Formata com 4 casas decimais
+    System.out.printf("A=%.4f%n", area);
     }
 }
